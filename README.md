@@ -1,5 +1,10 @@
 # ObjVariantEnsemble
- This is the official release of ObjVariantEnsemble:Advancing Point Cloud LLM Evaluation in Challenging Scenes with Subtly Distinguished Object
+ This is the official release of **ObjVariantEnsemble: Advancing Point Cloud LLM Evaluation in Challenging Scenes with Subtly Distinguished Object**.
+
+ Here is a small sample of our dataset：
+
+
+![](Examples/Examples.png)
 ## ToDo List
 - [x] Upload our paper and build project pages.
 - [ ] Pray for acceptance.
