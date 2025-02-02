@@ -25,7 +25,11 @@
               ObjVariantEnsemble: Advancing Point Cloud LLM Evaluation in Challenging Scenes with Subtly Distinguished Object
             </h1>
             <div class="is-size-5 publication-authors">
-              <span>Qihang Cao<sup>1,2</sup>, Huangxun Chen<sup>2</sup></span><br>
+              <span>
+                Qihang Cao</a><sup>1,2</sup>, 
+                <a href="https://www.chenhuangxun.com/" target="_blank">Huangxun Chen</a><sup>2</sup>
+              </span>
+              <br>
               <span>1. Shanghai Jiao Tong University</span><br>
               <span>2. Hong Kong University of Science and Technology (Guangzhou)</span>
             </div>
@@ -40,17 +44,6 @@
                       <i class="ai ai-arxiv"></i>
                     </span>
                     <span>Paper</span>
-                  </a>
-                </span>
-                
-                <!-- Supplementary PDF link -->
-                <span class="link-block">
-                  <a href="static/pdfs/OVE_suppl__for_AAAI.pdf" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Supplementary</span>
                   </a>
                 </span>
                 
@@ -70,7 +63,7 @@
                   <a href="https://github.com/OVE-Benchmark/OVE" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fas fa-database"></i>
+                      <i class="fab fa-google-drive"></i>
                     </span>
                     <span>Dataset</span>
                   </a>
@@ -83,6 +76,108 @@
     </div>
   </section>
   <!-- End Title Section -->
+
+<!-- Teaser Video Section -->
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <!-- Video Section -->
+            <video poster="" id="tree" autoplay controls muted loop width="100%">
+                <source src="static/images/Motivation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Comparison Section -->
+            <div class="content mt-5">
+                <h2 class="subtitle is-size-5 has-text-centered">
+                    <span class="has-text-weight-semibold">Comparison of 3D grounding benchmarks in complex scenes:</span>
+                </h2>
+                <div class="columns is-centered">
+                    <!-- Left Scene -->
+                    <div class="column is-5 has-text-left">
+                        <p class="has-text-info">
+                            <strong>[Left]</strong> A scene from <strong>ScanNet/ScanRef</strong>, where the text description is insufficient for accurately locating a chair.
+                        </p>
+                    </div>
+                    <!-- Right Scene -->
+                    <div class="column is-5 has-text-left">
+                        <p class="has-text-success">
+                            <strong>[Right]</strong> A scene from <strong>ObjVariantEnsemble</strong>, where a model successfully identifies targets given sufficiently detailed descriptions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Teaser Video Section -->
+
+<!-- OVE Dataset Visualization Section -->
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Main Title -->
+        <h2 class="title has-text-black has-text-centered">
+            Problems of Current Datasets & Advantages of OVE
+        </h2>
+
+        <!-- Benchmark Problems Section -->
+        <div class="box has-background-light has-text-centered">
+            <h3 class="title is-5 has-text-danger">Problems with Existing Benchmarks</h3>
+            <ul class="is-size-5 has-text-left" style="max-width: 800px; margin: 0 auto;">
+                <li class="mb-2">
+                    <i class="fas fa-database has-text-danger"></i> <strong>Small scale and insufficient annotations.</strong>
+                </li>
+                <li>
+                    <i class="fas fa-tools has-text-danger"></i> <strong>Lack of customizable challenge levels.</strong>
+                </li>
+            </ul>
+        </div>
+
+        <!-- OVE Dataset Overview: Two-Column Layout -->
+        <div class="columns is-centered mt-5">
+
+            <!-- Left Column: Dataset Scale -->
+            <div class="column is-5">
+                <div class="box">
+                    <i class="fas fa-database fa-3x has-text-primary"></i>
+                    <h3 class="is-size-5 has-text-weight-semibold mt-3">Larger & More Diverse Data</h3>
+                    <p>OVE significantly outperforms existing benchmarks in terms of data volume and annotation richness.</p>
+
+                    <!-- Dataset Comparison Image -->
+                    <figure class="mt-3">
+                        <img src="static/images/comparison.png" alt="Dataset Comparison" class="image">
+                        <figcaption class="is-size-6 has-text-grey mt-2">
+                            Comparison of dataset size and annotations: OVE vs. existing benchmarks.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Right Column: Customizable Challenge Levels -->
+            <div class="column is-5">
+                <div class="box">
+                    <i class="fas fa-tasks fa-3x has-text-info"></i>
+                    <h3 class="is-size-5 has-text-weight-semibold mt-3">More Flexible Evaluation</h3>
+                    <p>OVE enables difficulty adjustments based on object similarity, spatial complexity, and scene variation.</p>
+
+                    <!-- Visualization Image -->
+                    <figure class="mt-3">
+                        <img src="static/images/benchmark_sum_v2.pdf" alt="Benchmark Summary" class="image">
+                        <figcaption class="is-size-6 has-text-grey mt-2">
+                            Four challenge levels: Loc, Loc+Shape, Loc+Color, and Loc+Class.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End OVE Dataset Visualization Section -->
+  
+
+
 
 
   <!-- Abstract Section -->
@@ -104,12 +199,68 @@
   </section>
   <!-- End Abstract Section -->
 
-  <footer class="footer">
-    <div class="container has-text-centered">
-      <p>
-        This page was built using an <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
-      </p>
+
+  <!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title has-text-black">Poster</h2>
+
+      <iframe  src="static/images/Poster_AAAI.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
     </div>
-  </footer>
-</body>
-</html>
+  </section>
+<!--End paper poster -->
+
+
+  
+<!-- Citation Section -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title has-text-black">Citation</h2>
+    <p>
+      If you use our dataset or code in your research, please cite our work using the following BibTeX entry:
+    </p>
+    <pre><code>@article{cao2024objvariantensemble,
+  title={ObjVariantEnsemble: Advancing Point Cloud LLM Evaluation in Challenging Scenes with Subtly Distinguished Objects},
+  author={Cao, Qihang and Chen, Huangxun},
+  journal={arXiv preprint arXiv:2412.14837},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+<!-- End Citation Section -->
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+
+          <h3 class="title is-5 has-text-black">Acknowledgements</h3>
+
+          <p style="max-width: 800px; margin: 0 auto;">
+            We sincerely thank the anonymous reviewers for their valuable comments and suggestions, 
+            which have been instrumental in improving and refining this paper. 
+          </p>
+
+          <p style="max-width: 800px; margin: 20px auto 0;">
+            We are also deeply grateful to our friends and families for their continuous encouragement 
+            throughout this research.
+          </p>
+
+          <p style="max-width: 800px; margin: 20px auto 0;">
+            This work is supported by the Guangdong Provincial Key Lab of Integrated Communication, 
+            Sensing and Computation for Ubiquitous Internet of Things (No.2023B1212010007).
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
