@@ -7,6 +7,6 @@
 ![](Examples/Sample.png)
 ## ToDo List
 - [x] Upload our paper and build project pages.
-- [ ] Pray for acceptance.
-- [ ] Realease our benchmark including challenging scenes.
-- [ ] Realease the code for our Data Generation Framework, encompassing scene construction and the capture of annotations with key distinguishing information.
+- [x] Accepted to AAAI-2025. 🎉
+- [ ] Release our benchmark including challenging scenes. ⏳ *(Processing validation set, coming soon!)*
+- [ ] Release the code for our Data Generation Framework, encompassing scene construction and the capture of annotations with key distinguishing information.
