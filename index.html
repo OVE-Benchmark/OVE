@@ -21,9 +21,31 @@
       <div class="container is-max-desktop">
         <div class=" columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">
-              ObjVariantEnsemble: Advancing Point Cloud LLM Evaluation in Challenging Scenes with Subtly Distinguished Object
-            </h1>
+                        <h1 class="title is-1 publication-title" style="display: inline-block;">
+
+                  <span style="font-weight: bold; font-size: 1.2em;
+                      background: linear-gradient(to right, #ffb6c1, #ff1493);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      display: inline-block;">
+                      O</span><span style="font-weight: normal;">bj</span>
+              
+                  <span style="font-weight: bold; font-size: 1.2em;
+                      background: linear-gradient(to right, #ff1493, #ff0040);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      display: inline-block;">
+                      V</span><span style="font-weight: normal;">ariant</span>
+              
+                  <span style="font-weight: bold; font-size: 1.2em;
+                      background: linear-gradient(to right, #ff0040, #ff0000);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      display: inline-block;">
+                      E</span><span style="font-weight: normal;">nsemble</span>: Advancing Point Cloud LLM Evaluation in Challenging Scenes with Subtly Distinguished Object
+              
+              </h1>
+
             <div class="is-size-5 publication-authors">
               <span>
                 Qihang Cao</a><sup>1,2</sup>, 
@@ -133,44 +155,61 @@
             </ul>
         </div>
 
-        <!-- OVE Dataset Overview: Two-Column Layout -->
-        <div class="columns is-centered mt-5">
 
-            <!-- Left Column: Dataset Scale -->
-            <div class="column is-5">
-                <div class="box">
-                    <i class="fas fa-database fa-3x has-text-primary"></i>
-                    <h3 class="is-size-5 has-text-weight-semibold mt-3">Larger & More Diverse Data</h3>
-                    <p>OVE significantly outperforms existing benchmarks in terms of data volume and annotation richness.</p>
 
-                    <!-- Dataset Comparison Image -->
-                    <figure class="mt-3">
-                        <img src="static/images/comparison.png" alt="Dataset Comparison" class="image">
-                        <figcaption class="is-size-6 has-text-grey mt-2">
-                            Comparison of dataset size and annotations: OVE vs. existing benchmarks.
-                        </figcaption>
-                    </figure>
-                </div>
+
+
+            <!-- OVE Dataset Overview: Two-Column Layout -->
+<div class="columns is-centered is-multiline mt-5">
+
+    <!-- Left Column: Dataset Scale -->
+    <div class="column is-5"> <!-- 均衡两栏宽度 -->
+        <div class="box p-4 has-background-white-ter" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+            
+            <!-- 图标 + 标题同行 -->
+            <div class="is-flex is-align-items-center">
+                <i class="fas fa-database fa-2x has-text-primary"></i> 
+                <h3 class="is-size-5 has-text-weight-semibold ml-3">Larger & More Diverse Data</h3>
             </div>
 
-            <!-- Right Column: Customizable Challenge Levels -->
-            <div class="column is-5">
-                <div class="box">
-                    <i class="fas fa-tasks fa-3x has-text-info"></i>
-                    <h3 class="is-size-5 has-text-weight-semibold mt-3">More Flexible Evaluation</h3>
-                    <p>OVE enables difficulty adjustments based on object similarity, spatial complexity, and scene variation.</p>
+            <p class="mt-2">OVE significantly outperforms existing benchmarks in terms of data volume and annotation richness.</p>
 
-                    <!-- Visualization Image -->
-                    <figure class="mt-3">
-                        <img src="static/images/benchmark_sum_v2.pdf" alt="Benchmark Summary" class="image">
-                        <figcaption class="is-size-6 has-text-grey mt-2">
-                            Four challenge levels: Loc, Loc+Shape, Loc+Color, and Loc+Class.
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
+            <!-- Dataset Comparison Image -->
+            <figure class="mt-3">
+                <img src="static/images/comparison.png" alt="Dataset Comparison" class="image is-rounded">
+                <figcaption class="is-size-6 has-text-grey mt-2 has-text-centered">
+                    Comparison of dataset size and annotations: OVE vs. existing benchmarks.
+                </figcaption>
+            </figure>
 
         </div>
+    </div>
+
+    <!-- Right Column: Customizable Challenge Levels -->
+    <div class="column is-5">
+        <div class="box p-4 has-background-white-ter" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+            
+            <!-- 图标 + 标题同行 -->
+            <div class="is-flex is-align-items-center">
+                <i class="fas fa-tasks fa-2x has-text-info"></i>
+                <h3 class="is-size-5 has-text-weight-semibold ml-3">More Flexible Evaluation</h3>
+            </div>
+
+            <p class="mt-2">OVE enables difficulty adjustments based on object similarity, spatial complexity, and scene variation.</p>
+
+            <!-- Visualization Image -->
+            <figure class="mt-3">
+                <img src="static/images/benchmark_sum_v2.pdf" alt="Benchmark Summary" class="image is-rounded">
+                <figcaption class="is-size-6 has-text-grey mt-2 has-text-centered">
+                    Four challenge levels: Loc, Loc+Shape, Loc+Color, and Loc+Class.
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+</div>
+
 
     </div>
 </section>
@@ -244,19 +283,10 @@
 
           <h3 class="title is-5 has-text-black">Acknowledgements</h3>
 
-          <p style="max-width: 800px; margin: 0 auto;">
-            We sincerely thank the anonymous reviewers for their valuable comments and suggestions, 
-            which have been instrumental in improving and refining this paper. 
-          </p>
-
-          <p style="max-width: 800px; margin: 20px auto 0;">
-            We are also deeply grateful to our friends and families for their continuous encouragement 
-            throughout this research.
-          </p>
-
-          <p style="max-width: 800px; margin: 20px auto 0;">
-            This work is supported by the Guangdong Provincial Key Lab of Integrated Communication, 
-            Sensing and Computation for Ubiquitous Internet of Things (No.2023B1212010007).
+          <p style="max-width: 800px; margin: 20px auto 0; font-size: 0.9em;">
+            We are deeply grateful to our friends and families for their continuous encouragement 
+            throughout this research. This project page is inspired by 
+            <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>.
           </p>
 
         </div>
